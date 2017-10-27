@@ -9,7 +9,7 @@ fun readlist (infile : string) = let
 in 
   loop ins before TextIO.closeIn ins 
 end;
-val pureGraph =  readlist(infile);
+(*val pureGraph =  readlist(infile);*)
 
 fun writeFile filename content =
     let val fd = TextIO.openOut filename
